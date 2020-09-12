@@ -3,7 +3,6 @@ public class JoinTest {
         MyRun run = new MyRun();
         Thread thread = new Thread(run);
         thread.start();
-
         for (int i=0;i<5;i++) {
             System.out.println(Thread.currentThread().getName()+"----"+i);
             if(i==3) {
