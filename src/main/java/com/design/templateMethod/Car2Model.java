@@ -1,6 +1,6 @@
 package com.design.templateMethod;
 
-public class HummerH2Model extends HummerModel {
+public class Car2Model extends CarModel {
     private boolean isAlarm;
 
     public void setAlarm(boolean isAlarm) {
@@ -13,21 +13,21 @@ public class HummerH2Model extends HummerModel {
 
     @Override
     protected void start() {
-        System.out.println("H2启动");
+        System.out.println("Car2启动");
     }
 
     @Override
     protected void stop() {
-        System.out.println("H2停止");
+        System.out.println("Car2停止");
     }
 
     @Override
     protected void alarm() {
-        System.out.println("H2鸣笛");
+        System.out.println("Car2鸣笛");
     }
 
     @Override
     protected void engineBoom() {
-        System.out.println("H2引擎声");
+        System.out.println("Car2引擎声");
     }
 }

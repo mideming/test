@@ -1,6 +1,6 @@
 package com.design.templateMethod;
 
-public abstract class HummerModel {
+public abstract class CarModel {
     protected boolean isAlarm() {
         return true;
     }

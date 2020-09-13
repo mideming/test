@@ -1,24 +1,24 @@
 package com.design.templateMethod;
 
-public class HummerH1Model extends HummerModel {
+public class Car1Model extends CarModel {
     @Override
     protected void start() {
-        System.out.println("H1启动");
+        System.out.println("Car1启动");
     }
 
     @Override
     protected void stop() {
-        System.out.println("H1停止");
+        System.out.println("Car1停止");
     }
 
     @Override
     protected void alarm() {
-        System.out.println("H1鸣笛");
+        System.out.println("Car1鸣笛");
     }
 
     @Override
     protected void engineBoom() {
-        System.out.println("H1引擎声");
+        System.out.println("Car1引擎声");
     }
 
 }
