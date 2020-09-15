@@ -18,16 +18,13 @@ public class TestSingleton {
             executor.execute(() -> {
                 try {
                     cdl.await();
-
-                    SingletonV2 singleton = SingletonV2.getInstance();
+                    SingletonV7 singleton = SingletonV7.getInstance();
                     set.add(singleton.toString());
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 }
             });
         }
-
-
         Thread.sleep(1000);
         cdl.countDown();
         Thread.sleep(1000);

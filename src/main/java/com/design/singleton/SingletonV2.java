@@ -1,6 +1,7 @@
 package com.design.singleton;
 
 /**
+ * 懒汉
  * 优点：一开始不进行实例化
  * 缺点：非线程安全
  */
