@@ -1,5 +1,6 @@
 package com.design.chainOfResponsibility.v4;
 
+
 public interface Filter {
-    boolean doFilter(Message message);
+    void doFilter(FilterRequest request, FilterResponse response, FilterChain filterChain);
 }

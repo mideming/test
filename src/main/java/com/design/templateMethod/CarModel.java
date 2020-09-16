@@ -7,6 +7,7 @@ import lombok.Data;
  */
 @Data
 public abstract class CarModel {
+    // 钩子
     private boolean isAlarm = true;
 
     protected abstract void start();

@@ -1,5 +1,5 @@
 package com.design.chainOfResponsibility.v3;
 
 public interface Filter {
-    void doFilter(Message message);
+    boolean doFilter(Message message);
 }

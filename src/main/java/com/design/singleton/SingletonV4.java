@@ -2,7 +2,7 @@ package com.design.singleton;
 
 /**
  * 优点: 一开始不用实例化、线程安全、
- * 缺点：基本上没缺点，除了第一次实例化的时候可能会线程阻塞。
+ * 缺点：存在线程不安全的情况
  */
 public class SingletonV4 {
 

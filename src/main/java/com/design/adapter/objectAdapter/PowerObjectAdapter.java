@@ -1,7 +1,7 @@
 package com.design.adapter.objectAdapter;
 
 /**
- * 对象适配器：通过引用父类的对象获得父类的能力
+ * 对象适配器：通过引用需要适配的对象获得该对象的能力
  */
 public class PowerObjectAdapter implements Power110 {
     private Power220 power220;

@@ -1,4 +1,4 @@
-package com.design.chainOfResponsibility.v5;
+package com.design.chainOfResponsibility.v4;
 
 import lombok.Data;
 import lombok.ToString;

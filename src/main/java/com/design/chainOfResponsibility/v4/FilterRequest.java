@@ -5,6 +5,8 @@ import lombok.ToString;
 
 @Data
 @ToString
-public class Message {
+public class FilterRequest {
     private String msg;
+
+    private String order = "request的执行顺序";
 }

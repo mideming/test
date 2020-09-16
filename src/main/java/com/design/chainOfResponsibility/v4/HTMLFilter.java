@@ -5,11 +5,13 @@ package com.design.chainOfResponsibility.v4;
  */
 public class HTMLFilter implements Filter {
     @Override
-    public boolean doFilter(Message message) {
-        String msg = message.getMsg();
+    public void doFilter(FilterRequest request, FilterResponse response, FilterChain filterChain) {
+        String msg = request.getMsg();
         msg = msg.replace("<", "[");
         msg = msg.replace(">", "]");
-        message.setMsg(msg);
-        return true;
+        request.setMsg(msg);
+        request.setOrder(request.getOrder() + "--HTMLFilter()");
+        filterChain.doFilter(request, response, filterChain);
+        response.setOrder(response.getOrder() + "--HTMLFilter()");
     }
 }
