@@ -1,5 +1,8 @@
 package com.design.chainOfResponsibility.v4;
 
+/**
+ * 表情处理类
+ */
 public class FaceFilter implements Filter {
     @Override
     public boolean doFilter(Message message) {

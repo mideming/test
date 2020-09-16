@@ -1,5 +1,8 @@
 package com.design.chainOfResponsibility.v4;
 
+/**
+ * url处理类
+ */
 public class URLFilter implements Filter {
     @Override
     public boolean doFilter(Message message) {

@@ -6,6 +6,8 @@ package com.design.chainOfResponsibility.v4;
 public class CORClient4 {
     public static void main(String[] args) {
         Message message = new Message();
+        message.setMsg("大家好:( <script>,欢迎访问weimob.com,大家都是996");
+        System.out.println(message);
         // 第一个链条
         FilterChain filterChain1 = new FilterChain();
         filterChain1.add(new HTMLFilter())

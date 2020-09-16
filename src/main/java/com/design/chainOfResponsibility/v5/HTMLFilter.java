@@ -1,6 +1,8 @@
 package com.design.chainOfResponsibility.v5;
 
-
+/**
+ * 特殊字符处理类
+ */
 public class HTMLFilter implements Filter {
     @Override
     public void doFilter(FilterRequest request, FilterResponse response, FilterChain filterChain) {
@@ -8,7 +10,8 @@ public class HTMLFilter implements Filter {
         msg = msg.replace("<", "[");
         msg = msg.replace(">", "]");
         request.setMsg(msg);
+        request.setOrder(request.getOrder() + "--HTMLFilter()");
         filterChain.doFilter(request, response, filterChain);
-        response.setMsg(response.getMsg() + "--HTMLFilter()");
+        response.setOrder(response.getOrder() + "--HTMLFilter()");
     }
 }

@@ -1,20 +1,10 @@
 package com.design.chainOfResponsibility.v5;
 
+import lombok.Data;
+import lombok.ToString;
+
+@Data
+@ToString
 public class FilterResponse {
-    private String msg = "response的执行顺序";
-
-    @Override
-    public String toString() {
-        return "FilterResponse{" +
-                "msg='" + msg + '\'' +
-                '}';
-    }
-
-    public String getMsg() {
-        return msg;
-    }
-
-    public void setMsg(String msg) {
-        this.msg = msg;
-    }
+    private String order = "response的执行顺序";
 }

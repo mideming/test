@@ -6,6 +6,8 @@ package com.design.chainOfResponsibility.v2;
 public class CORClient2 {
     public static void main(String[] args) {
         Message message = new Message();
+        message.setMsg("大家好:( <script>,欢迎访问weimob.com,大家都是996");
+        System.out.println(message);
         // 处理特殊字符
         Filter htmlFilter = new HTMLFilter();
         htmlFilter.doFilter(message);

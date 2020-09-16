@@ -1,11 +1,13 @@
 package com.design.chainOfResponsibility.v1;
 
 /**
- * 责任链模式：原始代码
+ * 责任链模式：对Message进行处理
  */
 public class CORClient1 {
     public static void main(String[] args) {
         Message message = new Message();
+        message.setMsg("大家好:( <script>,欢迎访问weimob.com,大家都是996");
+        System.out.println(message);
         String msg = message.getMsg();
         // 处理特殊字符
         msg = msg.replace("<", "[");

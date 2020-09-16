@@ -1,6 +1,5 @@
 package com.design.chainOfResponsibility.v5;
 
-import com.design.chainOfResponsibility.v5.Filter;
 
 import java.util.ArrayList;
 import java.util.List;

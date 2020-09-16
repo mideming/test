@@ -14,6 +14,7 @@ public class FilterChain implements Filter{
     public boolean doFilter(Message message) {
         for (Filter filter : filters) {
             if(!filter.doFilter(message)){
+                // 出现一个false，则不再往下执行了
                 return false;
             }
         }

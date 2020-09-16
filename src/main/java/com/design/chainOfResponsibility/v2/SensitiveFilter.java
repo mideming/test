@@ -1,5 +1,8 @@
 package com.design.chainOfResponsibility.v2;
 
+/**
+ * 敏感字符处理类
+ */
 public class SensitiveFilter implements Filter {
     @Override
     public void doFilter(Message message) {

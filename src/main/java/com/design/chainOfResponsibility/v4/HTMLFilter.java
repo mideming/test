@@ -1,5 +1,8 @@
 package com.design.chainOfResponsibility.v4;
 
+/**
+ * 特殊字符处理类
+ */
 public class HTMLFilter implements Filter {
     @Override
     public boolean doFilter(Message message) {
