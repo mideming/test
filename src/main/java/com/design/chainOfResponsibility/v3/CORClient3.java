@@ -1,7 +1,7 @@
 package com.design.chainOfResponsibility.v3;
 
 /**
- * 责任链模式：链式编程，把FilterChain定义成Filter；并且FilterChain中的某个Filter决定链条是否继续
+ * 责任链模式：链式编程，把FilterChain定义成Filter
  */
 public class CORClient3 {
     public static void main(String[] args) {

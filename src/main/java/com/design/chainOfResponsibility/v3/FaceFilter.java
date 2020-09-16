@@ -5,10 +5,9 @@ package com.design.chainOfResponsibility.v3;
  */
 public class FaceFilter implements Filter {
     @Override
-    public boolean doFilter(Message message) {
+    public void doFilter(Message message) {
         String msg = message.getMsg();
         msg = msg.replace(":(", ":)");
         message.setMsg(msg);
-        return true;
     }
 }

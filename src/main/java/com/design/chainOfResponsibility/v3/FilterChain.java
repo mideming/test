@@ -11,13 +11,9 @@ public class FilterChain implements Filter{
         return this;
     }
 
-    public boolean doFilter(Message message) {
+    public void doFilter(Message message) {
         for (Filter filter : filters) {
-            if(!filter.doFilter(message)){
-                // 出现一个false，则不再往下执行了
-                return false;
-            }
+            filter.doFilter(message);
         }
-        return true;
     }
 }
