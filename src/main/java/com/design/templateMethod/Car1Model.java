@@ -1,5 +1,8 @@
 package com.design.templateMethod;
 
+/**
+ * 具体模板
+ */
 public class Car1Model extends CarModel {
     @Override
     protected void start() {

@@ -1,9 +1,13 @@
 package com.design.templateMethod;
 
+import lombok.Data;
+
+/**
+ * 抽象模板
+ */
+@Data
 public abstract class CarModel {
-    protected boolean isAlarm() {
-        return true;
-    }
+    private boolean isAlarm = true;
 
     protected abstract void start();
 

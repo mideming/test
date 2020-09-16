@@ -9,9 +9,15 @@ import lombok.ToString;
 @Data
 @ToString
 public class Computer {
+
     private String CPU;
+
     private String memory;
+
     private String hardDisk;
+
     private String keyBoard;
+
     private String mouse;
+
 }

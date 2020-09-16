@@ -1,16 +1,9 @@
 package com.design.templateMethod;
 
+/**
+ * 具体模板
+ */
 public class Car2Model extends CarModel {
-    private boolean isAlarm;
-
-    public void setAlarm(boolean isAlarm) {
-        this.isAlarm = isAlarm;
-    }
-
-    protected boolean isAlarm() {
-        return this.isAlarm;
-    }
-
     @Override
     protected void start() {
         System.out.println("Car2启动");

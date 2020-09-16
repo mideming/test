@@ -1,7 +1,7 @@
 package com.design.builder;
 
 /**
- * Builder的具体实现ConcreteBuilder
+ * （高配电脑）Builder的具体实现ConcreteBuilder
  */
 public class HighComputerConfigBuilder implements ComputerConfigBuilder {
     private Computer computer;

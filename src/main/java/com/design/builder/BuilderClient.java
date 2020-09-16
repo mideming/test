@@ -1,7 +1,7 @@
 package com.design.builder;
 
 /**
- *
+ * 隐藏创建对象的建造过程 & 细节，使得用户在不知对象的建造过程 & 细节的情况下，就可直接创建复杂的对象
  */
 public class BuilderClient {
     public static void main(String[] args) {
