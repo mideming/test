@@ -1,5 +1,8 @@
 package com.design.strategy.sort;
 
+/**
+ * 重量比较器（具体策略角色）
+ */
 public class CatWeightComparator implements Comparator<Cat> {
 
     @Override
