@@ -1,7 +1,0 @@
-@startuml
-商品 -> 优惠券: 异步回调发券
-优惠券 --> CC: 批量发券
-
-CC -> 优惠券: Another authentication Request
-优惠券 <-- 商品: another authentication Response
-@enduml

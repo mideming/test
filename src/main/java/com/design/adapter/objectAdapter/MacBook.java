@@ -1,13 +1,19 @@
 package com.design.adapter.objectAdapter;
 
+/**
+ * macbook需要110V充电
+ */
 public class MacBook {
-    private ThreePower threePower;
+    private Power110 power110;
 
-    public MacBook(ThreePower threePower) {
-        this.threePower = threePower;
+    public MacBook(Power110 power110) {
+        this.power110 = power110;
     }
 
+    /**
+     * 充电
+     */
     public void recharge() {
-        threePower.powerByThree();
+        power110.powerBy110();
     }
 }

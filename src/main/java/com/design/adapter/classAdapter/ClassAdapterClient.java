@@ -5,8 +5,8 @@ package com.design.adapter.classAdapter;
  */
 public class ClassAdapterClient {
     public static void main(String[] args) {
-        ThreePower threePower = new PowerClassAdapter();
-        MacBook macBook = new MacBook(threePower);
+        Power110 power110 = new PowerClassAdapter();
+        MacBook macBook = new MacBook(power110);
         macBook.recharge();
     }
 }
