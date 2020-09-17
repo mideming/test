@@ -13,7 +13,10 @@ public class ProxyClient {
         Movable movable = new Car();
         // 产生的代理类保存下来
         System.getProperties().put("sun.misc.ProxyGenerator.saveGeneratedFiles", "true");
-        Movable proxyInstance = (Movable)Proxy.newProxyInstance(movable.getClass().getClassLoader(), new Class[]{Movable.class}, new LogProxyHandler(movable));
-        proxyInstance.move();
+        Object object =Proxy.newProxyInstance(movable.getClass().getClassLoader(), new Class[]{Movable.class, Movable2.class}, new LogProxyHandler(movable));
+        Movable proxyInstance1 = (Movable)object;
+        Movable2 proxyInstance2 = (Movable2)object;
+        proxyInstance1.move();
+        proxyInstance2.move2();
     }
 }
